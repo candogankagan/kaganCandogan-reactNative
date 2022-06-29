@@ -24,12 +24,12 @@ const CreateScreen = ({navigation}: Props) => {
 
     const onAddPressed = () => {
         fetchService('products', 'POST', {
-            Name: title.value,
-            Price: Number(price.value),
-            Category: chosen.name,
-            Description: description.value,
-            Avatar: URL.value,
-            DeveloperEmail: 'candogankagan@gmail.com',
+            name: title.value,
+            price: Number(price.value),
+            category: chosen.name,
+            description: description.value,
+            avatar: URL.value,
+            developerEmail: 'candogankagan@gmail.com',
         })
             .then(response => {
                 console.log(response);
